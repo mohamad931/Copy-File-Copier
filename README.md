@@ -26,4 +26,4 @@ python Fast_File_Copier.py
 
 ## Executable
 
-- You can also download the standalone (.exe) from the [Releases section](https://github.com/mohamad931/Copy-File-Copier/releases/download/v1.0.0/FastFileCopier.exe) directly without needing Python installed.
+- You can also download the standalone (.exe) from the [Releases section](https://github.com/mohamad931/Copy-File-Copier/releases/download/v1.0.0/FastFileCopier.zip) directly without needing Python installed.
