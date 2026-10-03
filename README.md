@@ -1,46 +1,29 @@
-# Fast File Copier ⚡
+# Fast File Copier
 
-A high-speed, multi-threaded Windows desktop application built with Python and CustomTkinter. Designed to copy photos, videos, and large directories significantly faster than standard file explorers by leveraging concurrent I/O operations.
+A simple Windows desktop app to copy files faster using python multi-threading. Built to solve UI freezing during copy operations.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
+## Features
+- Multi-threaded copying using ThreadPoolExecutor
+- GUI built with CustomTkinter
+- Cancel button that stops the copy process safely
+- Handles permission errors without crashing
 
-## 🌟 Key Features
+## Requirements
+- Python 3.x
+- customtkinter
 
-- Multi-threaded Architecture: Utilizes ThreadPoolExecutor to handle concurrent I/O tasks, achieving up to 17% faster copy speeds compared to Windows Explorer in file-intensive tasks.
-- Responsive GUI: Built with CustomTkinter on a dedicated background thread to prevent UI freezing (Not Responding) during heavy operations.
-- Safe Cancellation: Features real-time cancellation using threading.Event() to stop ongoing copy processes instantly without locking memory or corrupting remaining files.
-- Robust Error Handling: Seamlessly manages system exceptions, including PermissionError and missing file paths.
-- Standalone Executable: Fully packageable into a single portable .exe file via PyInstaller.
+## Setup & Running
 
-## 🛠️ Tech Stack
-
-- GUI Framework: [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
-- Concurrency & Threading: threading, concurrent.futures.ThreadPoolExecutor
-- File System Operations: shutil, os
-- Deployment: PyInstaller
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Ensure you have Python 3.8+ installed.
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone [https://github.com/YOUR_USERNAME/Fast-File-Copier.git](https://github.com/YOUR_USERNAME/Fast-File-Copier.git)
-cd Fast-File-Copier
-```
-   
-2. Install dependencies:
+1. Install requirements:
 ```bash
 pip install customtkinter
 ```
 
-3. Run the application:
+2. Run the script:
 ```bash
 python Fast_File_Copier.py
 ```
+
+## Executable
+
+- You can also download the standalone (.exe) from the [Releases section](https://github.com/mohamad931/Copy-File-Copier/releases/download/v1.0.0/FastFileCopier.exe) directly without needing Python installed.
